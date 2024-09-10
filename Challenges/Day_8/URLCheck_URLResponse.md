@@ -2,9 +2,9 @@
 
 #### Challenge Objectives
 
-- Set up a email service on a virtual machine.
-- Create a shell script to check if a particular URL is accessible or not if not send email with details.
-- Create a shell script to check the response time of a URL, if URL is taking more than 4 seconds to respond, send email with details.
+- Set up an email service on a virtual machine.
+- Create a shell script to check if a particular URL is accessible or not, if not send email with details.
+- Create a shell script to check the response time of a URL, if URL is taking more than 4 seconds to respond, send an email with details.
 
 #### Completion and Submission
 
