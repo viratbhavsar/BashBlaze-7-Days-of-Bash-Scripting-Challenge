@@ -40,6 +40,7 @@ sleep 5 && apt-get install -y ${package,,} > /dev/null 2>&1 &
 #Fetch PID
 last_pid=$!
 
+#Progress bar
 while ps | grep -i "${last_pid}" > /dev/null
 do
   for i in '-' '\' '|' '/'
