@@ -10,7 +10,8 @@ while true; do
     # Read user input with prompt
     read -p "Enter a line of text (Press Enter without text to exit): " input
 
-    # Exit if the user enters an empty string
+    # Exit if the user enters an empty stringThe -z option in shell scripting is used with conditional statements to check if a string is empty.
+    #
     if [[ -z "$input" ]]; then
         echo "Exiting the Interactive Explorer. Goodbye!"
         break
