@@ -22,6 +22,7 @@ function create_backup {
 
     # Create the backup folder with the timestamped name
     mkdir "$backup_dir"
+    zip -r "${backup_dir}.zip" "${source_dir}"
     echo "Backup created successfully: $backup_dir"
 }
 
