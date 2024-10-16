@@ -1,30 +1,40 @@
 #!/bin/bash
 
-# First line of the script is the shebang which tells the system how to execute
 
-# Task  2: Echo
-echo "Scripting is fun with @TWS"
+#Task1:Comment
+#by this hashtag we can give oneline comment and exclude any particular line of code by this.
 
-# Task  3: Variables
-variable1="Hello"
-variable2="Bash"
+<<comment
+this is multiline
+comment to explain what is script about and lots of 
+explaination u can give so this is syntax to write multiline comment 
+and you can give anyname like i have given comment but main thing is that the end name should be same.
+comment
 
-# Task  4: Using Variables
-greeting="$variable1, $variable2!"
-echo "$greeting Welcome to the world of Bash scripting!"
+#Task:2
+#this echo is use to print or display msg in terminal 
+echo "hello dosto"
 
-# Task  5: Using Built-in Variables
-echo "My current bash path - $BASH"
-echo "Bash version I am using - $BASH_VERSION"
-echo "PID of bash I am running - $$"
-echo "My home directory - $HOME"
-echo "Where am I currently? - $PWD"
-echo "My hostname - $HOSTNAME"
+#Task:3
+#Variables in bash are used to store data and can be referenced by their name. 
+name="faizan" #here i am assigning the name variable with value faizan.
+echo "hello $name" #here i am acessing that variable using $ symbol.
 
-# Task  6: Wildcards
+#Task 4: Using Variables
+#Now that you have declared variables, let's use them to perform a simple task. Create a bash script that takes two variables (numbers) as input and prints their sum using those variables.
+
+num1=4
+num2=4
+echo "sum of num1 and num2 is  $(( $num1 + $num2 ))"
+
+#Task:5 built in variables
+echo "print the present working directory with help of $PWD"
+echo "print user $USER"
+echo "$SHELL"
+
+#Task 6: Wildcards
 echo "Files with .txt extension in the current directory:"
 ls *.txt
-
 
 
 #Make sure to provide execution permission with the following command:
