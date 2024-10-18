@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Log Analyzer and Report Generator
-
 # Check if a log file path is provided
 if [ $# -eq 0 ]; then
     echo "Error: Please provide the path to the log file as an argument."
@@ -22,17 +20,17 @@ fi
 report_file="log_analysis_report_$(date +%Y%m%d_%H%M%S).txt"
 
 # Function to count errors
-count_errors() {
+function count_errors() {
     grep -c "ERROR" "$log_file"
 }
 
 # Function to find critical events
-find_critical_events() {
+function find_critical_events() {
     grep -n "CRITICAL" "$log_file"
 }
 
 # Function to get top 5 error messages
-get_top_errors() {
+function get_top_errors() {
     grep "ERROR" "$log_file" | awk -F "ERROR" '{print $2}' | sort | uniq -c | sort -nr | head -n 5
 }
 
